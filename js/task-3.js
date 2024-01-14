@@ -1,10 +1,15 @@
 function getElementWidth(content, padding, border) {
-  const getElementWidth = Number.parseFloat(content , padding , border);
-   
-
-  return(`border-box ${content + (padding * 2) + (border * 2)}`);
+  
+  //const getElementWidth = parseFloat(content, padding, border);
+  
+  const contentWidth = parseFloat(content);
+  const paddingWidth = parseFloat(padding);
+  const borderWidth = parseFloat(border);
   
 
+ return(`${contentWidth + (paddingWidth * 2) + (borderWidth * 2)}`);
+ 
+  
 }
 
 
